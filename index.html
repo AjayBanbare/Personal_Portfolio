@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="resources/css/style.css">
+    <!-- Box Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
+    <script id="form" text="text/x-handlebars-template">
+                    <h1>
+                    Thank you {{Name}}. We will get back soon.
+                    </h1>
+    </script>
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<body>
+    <!-- Navbar -->
+    <header>
+        <a href="#" class="logo"><u>Portfolio</u></a>
+ 
+        <div class="bx bx-menu" id="menu-icon"></div>
+ 
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            
+            <li><a href="#services">Skills</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <div class="bx bx-moon" id="darkmode"></div>
+        </ul>
+    </header>
+    <!-- Home -->
+ 
+    <section class="home" id="home">
+        <div class="social">
+            <a href="https://github.com/AjayBanbare/"><i class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/in/ajay-banbare/"><i class='fa fa-linkedin' ></i></a>
+            <a href="https://twitter.com/ABanbare?t=JmQY41trdlGYwRu4TYDqTA&s=09"><i class='fa fa-twitter' ></i></a>
+        </div>
+        <div class="home-img">
+            <img src="resources/images/main.png" alt="">
+        </div>
+        <div class="home-text">
+            <span>Hello, I'm</span>
+            <h1>Ajay Banbare</h1>
+            <h2>Frontend Developer</h2>
+            <p>Learning new skills  <br> to be the best Developer</p>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+ 
+    </section>
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>About Me</h2>
+            <span>Introduction</span>
+        </div>
+        <!-- About Content -->
+        <div class="about-container">
+            <div class="about-img">
+                <img src="resources/images/p1.jpg" alt="">
+            </div>
+            <div class="about-text">
+                <p>Hi I'm Ajay Banbare. I'm 22 years old. I am learning new skills to be a Junior Java Full Stack Developer. I have done my graduation in Computer Science.When I have free time, it's great to indulge in some of my favorite hobbies like trekking, listening to music and exploring different kinds of new technology.</p>
+                <div class="information">
+                    <!-- Box 1 -->
+                    <div class="info-box">
+                        <i class='bx bxs-user' ></i>
+                        <span>Ajay Banbare</span>
+                    </div>
+                    <!-- Box 2 -->
+                    <div class="info-box">
+                        <i class='bx bxs-phone' ></i>
+                        <span>+91 7620712525</span>
+                    </div>
+                    <!-- Box 3 -->
+                    <div class="info-box">
+                        <i class='bx bxs-envelope' ></i>
+                        <span>ajaybanbare@gmail.com</span>
+                    </div>
+                </div>
+                <a href="https://drive.google.com/file/d/1xvZ-4lvgqj7TpJ68bGt17Soi9ISTpOZM/view?usp=share_link" class="btn">Download Cv</a>
+            </div>
+        </div>
+    </section>
+    <!---->
+    <!-- Skills -->
+ <section class="skills" id="skills">
+    <div class="heading">
+        <h2>Skills</h2>
+        <span>My Skills</span>
+
+    </div>
+    <!-- Skills Content -->
+  <div style="padding-left: 320px;">
+    <div class="skills-container">
+        <div class="bars">
+          
+            <!-- Box 1 -->
+            <div class="bars-box">
+                <h3>HTML</h3>
+                <span>94%</span>
+                <div class="light-bar"></div>
+                <div class="percent-bar html-bar"></div>
+            </div>
+            <!-- Box 2 -->
+            <div class="bars-box">
+                <h3>CSS</h3>
+                <span>84%</span>
+                <div class="light-bar"></div>
+                <div class="percent-bar css-bar"></div>
+            </div>
+            <!-- Box 3 -->
+            <div class="bars-box">
+                <h3>JavaScript</h3>
+                <span>74%</span>
+                <div class="light-bar"></div>
+                <div class="percent-bar js-bar"></div>
+            </div>
+            <!-- Box 4 -->
+            <div class="bars-box">
+                <h3>SQL</h3>
+                <span>80%</span>
+                <div class="light-bar"></div>
+                <div class="percent-bar react-bar"></div>
+            </div>
+        
+            <div class="bars-box">
+              <h3>Java</h3>
+              <span>80%</span>
+              <div class="light-bar"></div>
+              <div class="percent-bar react-bar"></div>
+          </div>
+          
+        </div>
+        <div class="skills-img">
+            <img src="123.png" alt="">
+        </div>
+    </div>
+    </div>
+
+</section>
+<!-- Services -->
+<section class="services" id="services">
+    <div class="heading">
+        <h2>Projects</h2>
+        <span></span>
+    </div>
+    <div class="services-content">
+        <!-- Box 1 -->
+        <div class="services-box">
+            
+            <h3>Travel Agency Management System</h3>
+            
+            <a href="#"></a>
+        </div>
+        <!-- Box 2 -->
+        <div class="services-box">
+            
+            <h3>Bookstore website</h3>
+            <a href="#"></a>
+        </div>
+        <!-- Box 3 -->
+        <div class="services-box">
+          
+            <h3>Photo Gallery Website</h3>
+        
+            <a href="#"></a>
+        </div>
+
+        <div class="services-box">
+    
+            <h3>Colmar Academy</h3>
+            <a href="#"></a>
+        </div>
+    </div>
+</section>
+<!--Certication section-->
+<center>
+<h2>Certifications</h2>
+</center>
+  <br>
+  <br>
+
+  <div class="box">
+    <img src="/resources/images/2.JPG">
+    <img src="/resources/images/Ajay Banbare vinsys.jpg">
+    <img src="/resources/images/1.JPG">
+    
+</div>
+<!--end of certification-->
+
+<!-- Footer -->
+<br>
+<br>
+<div class="footer">
+    <h2>Social Media Accounts</h2>
+    <div class="footer-social">
+        <a href="#"><i class='bx bxl-facebook' ></i></a>
+        <a href="#"><i class='bx bxl-twitter' ></i></a>
+        <a href="#"><i class='bx bxl-instagram' ></i></a>
+        <a href="#"><i class='bx bxl-youtube' ></i></a>
+    </div>
+
+</div>
+<!-- Copyright -->
+<div class="copyright">
+    <p>Created By Ajay Banbare | All Right Reserved.</p>
+</div>
+<!--
+<h3><p id = 'greeting'></p></h3>
+     Link To JS 
+    <script src="resources/js/main.js"></script>
+      <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+--> 
+</body>
+</html>
